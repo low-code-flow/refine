@@ -29,10 +29,8 @@ export default function BlogPostItem({ className }) {
     frontMatter,
     description,
     category,
-    authors,
   } = metadata;
   const { label: categoryLabel, permalink: categoryPermalink } = category;
-  const author = authors?.[0];
 
   return (
     <BlogPostItemContainer className={className}>
@@ -106,28 +104,6 @@ export default function BlogPostItem({ className }) {
           >
             {categoryLabel}
           </Link>
-          {author && (
-            <>
-              <Dot />
-              <Link
-                to={`/blog/author/${author.key}/`}
-                className={clsx(
-                  "uppercase",
-                  "no-underline",
-                  "hover:no-underline",
-                  "text-zinc-500",
-                  "dark:text-zinc-400",
-                  "hover:text-zinc-600",
-                  "dark:hover:text-zinc-300",
-                  "transition-colors",
-                  "duration-200",
-                  "ease-in-out",
-                )}
-              >
-                {author.name}
-              </Link>
-            </>
-          )}
           <Dot />
           <DateComponent date={date} formattedDate={formattedDate} />
         </div>
