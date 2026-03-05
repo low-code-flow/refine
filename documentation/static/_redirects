@@ -1440,8 +1440,6 @@
 
 /core/docs/3.xx.xx/advanced-tutorials/data-provider/supabase/api-reference/core/hooks/auth/useLogin/ /core/docs/authentication/hooks/use-login/ 301
 
-/advanced-tutorials/mutation-mode/ /core/docs/advanced-tutorials/mutation-mode/ 301
-
 /core/docs/data/hooks/useMany/ /core/docs/data/hooks/use-many/ 301
 
 /core/docs/api-reference/mui/components/auth-page/ /core/docs/ui-integrations/material-ui/components/auth-page/ 301
